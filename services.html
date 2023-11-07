@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Our Services</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfafa;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.service-box {
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.front, .back {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    transition: transform 0.5s;
+    backface-visibility: hidden;
+}
+
+.front {
+    background: #3498db;
+    transform: rotateY(0deg);
+}
+
+.back {
+    background: #403e3e;
+    transform: rotateY(180deg);
+    padding: 15px;
+}
+
+.service-box:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.service-box:hover .back {
+    transform: rotateY(0deg);
+}
+
+h2 {
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Services</h1>
+        <div class="service-box">
+            <div class="front">
+                <img src="C:\Users\surya\Desktop\personal website\web designer.avif" alt="Service 1">
+                <h2>Web designing</h2>
+            </div>
+            <div class="back">
+              <h1>Web Designing</h1>
+                <p>Here we create personal,professional and many types of web designing.</p>
+            </div>
+        </div>
+        <div class="service-box">
+            <div class="front">
+                <img src="C:\Users\surya\Desktop\personal website\graphics design.avif" alt="Service 2">
+                <h2>Graphics Designing</h2>
+            </div>
+            <div class="back">
+              <h1>Graphics Designing</h1>
+                <p>Here we create amazing photo,poster,logo editing using photoshop.</p>
+            </div>
+        </div>
+        <div class="service-box">
+            <div class="front">
+                <img src="C:\Users\surya\Desktop\personal website\web hosting img.avif"alt="Service 3">
+                <h2>Website Hosting</h2>
+            </div>
+            <div class="back">
+              <h1>Website hosting</h1>
+                <p>Here we host your website in free of cost.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

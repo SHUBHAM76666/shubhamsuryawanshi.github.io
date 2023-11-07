@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Design Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.design-box {
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.design-box:hover {
+    transform: scale(1.05);
+}
+
+.design-image img {
+    width: 100%;
+    height: auto;
+}
+
+.design-details {
+    background-color: #705cf3;
+    padding: 20px;
+    height: 30%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    transition: bottom 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.design-box:hover .design-details {
+    bottom: 0;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+    color: #f8f5f5;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Work</h1>
+        <div class="design-box">
+            <div class="design-image">
+                <img src="C:\Users\surya\Desktop\personal website\design img1.jpg" alt="Design 1">
+            </div>
+            <div class="design-details">
+                <h2>Web Designing<br>Here our web designing task</h2>
+                
+            </div>
+        </div>
+        <div class="design-box">
+            <div class="design-image">
+                <img src="C:\Users\surya\Desktop\personal website\Avishkar water conservation.png" alt="Design 2">
+            </div>
+            <div class="design-details">
+                <h2>Graphics Design</h2>
+                <p>Here we create a poster for College level Poster Presentation using Photoshop.</p>
+            </div>
+        </div>
+        <div class="design-box">
+            <div class="design-image">
+                <img src="C:\Users\surya\Desktop\personal website\design img3.jpg" alt="Design 3">
+            </div>
+            <div class="design-details">
+                <h2>Web Hosting</h2>
+                <p>loading........</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
